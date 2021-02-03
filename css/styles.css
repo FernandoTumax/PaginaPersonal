@@ -1,0 +1,316 @@
+@font-face{
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf");
+}
+
+@font-face{
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+
+@keyframes rotate-logo{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes cambiarColor{
+    20%{
+        color: black;
+    }
+    40%{
+        color: white;
+    }
+    60%{
+        color: black;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes neon{
+    20%{
+        background-color: #FEB6EA;
+    }
+    40%{
+        background-color: #33AAF2;
+    }
+    60%{
+        background-color: #33EA98;
+    }
+    80%{
+        background-color: #A85BE3;
+    }
+    100%{
+        background-color: #FEB6EA;
+    }
+}
+
+@keyframes fromUp{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(15%);
+        opacity: 1;
+    }
+}
+
+@keyframes fromDown{
+    from{
+        transform: translateY(200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(img/pattern.png);
+}
+
+a{
+    display: block;
+    margin-top: 18px;
+    margin-left: 85px;
+    margin-right: 85px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: "yanone";
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 300ms all;
+}
+a:hover{
+    font-size: 25px;
+    width: 180px;
+    height: 50px;
+    background-color: #37bcf9;
+    color: white;
+}
+
+a:focus{
+    background-color: black;
+    color: white;
+}
+
+#logo-header{
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 820px;
+    margin-right: 820px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 99px;
+    background-color: black;
+}
+
+#encabezado{
+    border: 1px solid black;
+    text-align: center;
+    height: 250px;
+    line-height: 25px;
+    background-color: black;
+    transition: all 300ms;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px black inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#encabezado:hover{
+    animation: neon 8s linear infinite;
+}
+
+#encabezado:hover #logo{
+    animation: fromUp 900ms linear;
+}
+
+#encabezado:hover #txtUp{
+    animation: fromDown 900ms linear;
+}
+
+#encabezado:hover #txtUp h1{
+    animation: cambiarColor 8s linear infinite;
+}
+
+#encabezado:hover #logo img{
+    animation: rotate-logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#titulo{
+    margin-bottom: 15px;
+    margin-left: 750px;
+    margin-right: 750px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-family: "finger";
+}
+
+#imgBio{
+    display: block;
+    width: 150px;
+    margin: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#biografia{
+    float: right;
+    margin: 45px;
+    margin-left: 85px;
+    margin-right: 85px;
+    height: 250px;
+    padding: 15px;
+    width: 350px;
+    line-height: 30px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.info{
+    margin: 45px;
+    margin-left: 85px;
+    margin-right: 85px;
+    padding: 15px;
+    width: 1100px;
+    height: 455px;
+    line-height: 30px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.info h2{
+    display: block;
+    width: 500px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "finger";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url("img/pxgray.png"), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    transition: 300ms all;
+}
+
+.info p{
+    font-size: 25px;
+    font-family: "yanone";
+    text-align: center;
+}
+
+.list-hobby{
+    margin-left: 405px;
+    margin-right: 405px;
+    transition: all 300ms;
+}
+
+.hobby{
+    display: block;
+    margin-top: 18px;
+    padding-left: 15px;
+    text-align: center;
+    width: 270px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: "yanone";
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 300ms all;
+}
+
+.hobby:hover{
+    font-size: 25px;
+    width: 310px;
+    height: 50px;
+    background-color: #37bcf9;
+    color: white;
+}
+
+.logo-hobby{
+    display: block;
+    width: 50px;
+    margin-left: 210px;
+    margin-left: 210px;
+    margin-top: -55px;
+    opacity: 0;
+    transition: all 1s;
+}
+.list-hobby:hover .logo-hobby{
+    animation: fromLeft 900ms linear;
+    width: 60px;
+    margin-left: 350px;
+    margin-right: 350px;
+    opacity: 1;
+}
+
+#infoAnime{
+    height: 420px;
+}
+
+.list-hobby:hover #logoPeq1,
+.list-hobby:hover #logoPeq2{
+    width: 100px !important;
+}
+
+
+#hobby1{
+    margin-top: 45px !important;
+}
+
+#infoComic{
+    height: 150px !important;
+}
+
+footer{
+    margin-top: 250px;
+    height: 125px;
+}
+
+#creador{
+    text-align: center !important;
+    line-height: 120px;
+    font-size: 30px;
+    margin-top: -165px;
+}

@@ -1,0 +1,32 @@
+.logoBio{
+    margin-left: 840px !important;
+    margin-right: 840px !important;
+    background-color: transparent !important;
+    border: transparent !important;
+    border-radius: 0px !important;
+}
+
+#fotoBio{
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 460px;
+    margin-right: 460px;
+}
+
+#titulo{
+    margin-top: -10px !important;
+}
+
+p{
+    text-align: justify !important;
+}
+
+h2{
+    font-size: 25px !important;
+    width: 600px;
+}
+
+.info{
+    height: 500px !important;
+}
